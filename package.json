@@ -1,7 +1,7 @@
 {
   "name": "teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Habilidades Trabalhadas:**",
   "license": "MIT",
   "author": "",
   "type": "module",
@@ -13,10 +13,19 @@
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "express": "^4.21.2"
   },
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "prisma": "^6.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelsarti/back-dishes.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/miguelsarti/back-dishes/issues"
+  },
+  "homepage": "https://github.com/miguelsarti/back-dishes#readme"
 }

@@ -10,15 +10,20 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url = env("DATABASE_URL")
 }
 
-model Task {
-  id        Int     @id @default(autoincrement())
-  descricao String
-  concluida Boolean @default(false)
+model Dish {
+  id Int @id @default(autoincrement())
+  name String
+  description String
+  price Int
+  category String
+  ingredients String
+  imageUrl String
+  prepTime Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  criadaEm DateTime @default(now())
-
-  @@map("tasks")
+  @@map("pratos")
 }
